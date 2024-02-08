@@ -49,8 +49,8 @@ jobs:
         name: Build and Push Docker Image
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_USERNAME }}
         run: |
-          docker build -t <DOCKERHUB_USERNAME>/<IMAGE_NAME>:<TAG> .
-          docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-          docker push <DOCKERHUB_USERNAME>/<IMAGE_NAME>:<TAG>
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/hello-world-test:0.0.1-SNAPSHOT
+          docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_USERNAME }}
+          docker push ${{ secrets.DOCKER_USERNAME }}/hello-world-test:0.0.1-SNAPSHOT
