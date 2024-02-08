@@ -51,9 +51,7 @@ jobs:
           file: ./Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: '${{ secrets.REGISTRY_URL }}/hello_world_test:latest'
-          cache-from: 'type=registry,ref=${{ secrets.REGISTRY_URL }}/hello_world_test:buildcache'
-          cache-to: 'type=registry,ref=${{ secrets.REGISTRY_URL }}/hello_world_test:buildcache,mode=max'
+          tags: 'hello_world_test:latest'
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_USERNAME }}
