@@ -36,7 +36,7 @@ jobs:
 
     -   
         name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
+        uses: docker/setup-buildx-action@v3
         
     -
         name: Login to Docker Hub
@@ -52,9 +52,9 @@ jobs:
           file: ./Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: '${{ secrets.REGISTRY_URL }}/hello-world-test/server:latest'
-          cache-from: 'type=registry,ref=${{ secrets.REGISTRY_URL }}/hello-world-test/server:buildcache'
-          cache-to: 'type=registry,ref=${{ secrets.REGISTRY_URL }}/hello-world-test:buildcache,mode=max'
+          tags: '${{ secrets.REGISTRY_URL }}/hello_world_test/server:latest'
+          cache-from: 'type=registry,ref=${{ secrets.REGISTRY_URL }}/hello_world_test/server:buildcache'
+          cache-to: 'type=registry,ref=${{ secrets.REGISTRY_URL }}/hello_world_test:buildcache,mode=max'
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_USERNAME }}
