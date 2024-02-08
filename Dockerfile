@@ -1,13 +1,11 @@
-FROM openjdk:17-jdk-slim AS build
+FROM maven:3 as BUILD_IMAGE
+ENV APP_HOME=/root/dev/myapp/
+RUN mkdir -p $APP_HOME/src/main/java
+WORKDIR $APP_HOME
+COPY . .
+RUN mvn -B package -e -X --file my-app/pom.xml
 
-COPY pom.xml mvnw ./
-COPY .mvn .mvn
-RUN ./mvnw dependency:resolve
-
-COPY src src
-RUN ./mvnw package
-
-FROM openjdk:17-jdk-slim
-WORKDIR demo
-COPY --from=build target/*.jar demo.jar
-ENTRYPOINT ["java", "-jar", "demo.jar"]
+FROM openjdk:8-jre
+WORKDIR /root/
+COPY --from=BUILD_IMAGE /root/dev/myapp/my-app/target/my-app*.jar .
+CMD java -jar my-app*.jar
