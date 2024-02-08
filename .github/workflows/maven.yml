@@ -39,4 +39,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/hello_world_test:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/hello-world-test:latest
