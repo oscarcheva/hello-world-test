@@ -38,7 +38,10 @@ jobs:
           overwrite-settings: true
           job-status: 'success'
 
-      - name: Build with Maven
+      - name: Update version in POM
+        run: mvn versions:set -DnewVersion=$(date +'%Y%m%d%H%M%S') -DgenerateBackupPoms=false
+
+      - name: Build JAR with Maven
         run: mvn -B clean package
         
       -
@@ -59,4 +62,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/hello-world-test:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/hello-world-test:$(date +'%Y%m%d%H%M%S')
