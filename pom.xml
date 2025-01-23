@@ -70,6 +70,18 @@
 				<configuration>
 					<generateBackupPoms>false</generateBackupPoms>
 				</configuration>
+				<executions>
+					<execution>
+						<id>update-versions</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>set</goal>
+						</goals>
+						<configuration>
+							<generateBackupPoms>false</generateBackupPoms>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
