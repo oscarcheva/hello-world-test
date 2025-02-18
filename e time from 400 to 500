@@ -1,0 +1,356 @@
+[33mcommit a299eec4a5c91b46664540d8fda51ed781d71015[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Wed Feb 28 12:23:38 2024 -0300
+
+    Update maven.yml
+
+[33mcommit 9c947b23a1673fdaff287402395e5f47dcf3aa50[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Wed Feb 28 12:20:34 2024 -0300
+
+    Update maven.yml
+
+[33mcommit 559f4813746563d0897a2a58fb3a15b6cfb018b9[m
+Merge: aff21de 26ae704
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Wed Feb 28 12:20:15 2024 -0300
+
+    Merge branch 'main' of github.com:oscarcheva/hello-world-test into main
+
+[33mcommit aff21de304c631cda05155eeff7eb4881d263a2f[m
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Wed Feb 28 12:19:56 2024 -0300
+
+    Adding automatic versioning
+
+[33mcommit 26ae7041c788e6e9fcba0d46587ead06b4aae81d[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Wed Feb 28 12:11:11 2024 -0300
+
+    Update maven.yml
+
+[33mcommit 768b710111f1158c3c1c167a45581106dede87d8[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Wed Feb 28 12:08:38 2024 -0300
+
+    Update maven.yml
+
+[33mcommit ab463a4623878de435a3847eac35178911acd24a[m
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Wed Feb 28 12:04:25 2024 -0300
+
+    Updating DockerFile
+
+[33mcommit 3261de5721389b4a4f90104effa8bccef7bc08ef[m
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Thu Feb 8 16:19:11 2024 -0300
+
+    a
+
+[33mcommit 76eaa95dca6ebc880cf03162f95410890dce73ff[m
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Thu Feb 8 16:16:08 2024 -0300
+
+    a
+
+[33mcommit ed8171caf18214bc84a52fbc7218368fc4c95e7a[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Thu Feb 8 16:11:56 2024 -0300
+
+    Update maven.yml
+
+[33mcommit a698caafddf21d7548abed2612458c809bec47aa[m
+Merge: cb69ad7 fe35add
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Thu Feb 8 15:53:57 2024 -0300
+
+    Merge branch 'main' of github.com:oscarcheva/hello-world-test into main
+
+[33mcommit cb69ad74303aae61800ca662ac0d7e6cc55e00ff[m
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Thu Feb 8 15:53:40 2024 -0300
+
+    another change
+
+[33mcommit fe35addc719fa17c9d3fcd6adea436d65e8b46d4[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Thu Feb 8 15:51:38 2024 -0300
+
+    Update maven.yml
+
+[33mcommit 3db7c669e3c1c7c0d96c2b7d8cd0141b5467c7f3[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Thu Feb 8 15:49:24 2024 -0300
+
+    Update maven.yml
+
+[33mcommit d028d5f916caed3e4a67b9a869545fd0be55eaae[m
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Thu Feb 8 15:42:35 2024 -0300
+
+    another change
+
+[33mcommit 3663ea9ac778daa119280f76ad508c1d1a514e3a[m
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Thu Feb 8 15:39:16 2024 -0300
+
+    another change
+
+[33mcommit 5ded57691074de2e9b625a4adcf75370c80c80ae[m
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Thu Feb 8 15:31:45 2024 -0300
+
+    another change
+
+[33mcommit 4625c76fd347442c86e693d2f1e0a90f6393efe7[m
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Thu Feb 8 15:30:09 2024 -0300
+
+    another change
+
+[33mcommit 49d3d3dc9c828116980688c57fd8fe8fee90072f[m
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Thu Feb 8 15:26:42 2024 -0300
+
+    Making it springboot
+
+[33mcommit 7ffa74fd3dda52e6b622d8e8e91b47feff0cd0aa[m
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Thu Feb 8 15:12:49 2024 -0300
+
+    removing it
+
+[33mcommit c8a1fb9b170bcec179fbccaa17602b340ecd9ebf[m
+Merge: bd63660 63eb071
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Thu Feb 8 15:11:03 2024 -0300
+
+    Merge branch 'main' of github.com:oscarcheva/hello-world-test into main
+
+[33mcommit bd6366048fd79e4019ed51968d81a0e86ab11956[m
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Thu Feb 8 15:07:53 2024 -0300
+
+    Adding something that will fail
+
+[33mcommit 63eb07177afe821d1853516e2383714feb13f9a3[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Thu Feb 8 14:59:52 2024 -0300
+
+    Update maven.yml
+
+[33mcommit bba512f5b77eca4a03f4d2a7f32d9f0a79392476[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Thu Feb 8 14:57:34 2024 -0300
+
+    Update maven.yml
+
+[33mcommit aa066c7cc9257bf9af35889da343039797f7c73e[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Thu Feb 8 14:56:07 2024 -0300
+
+    Update maven.yml
+
+[33mcommit b7da91868850a114fe4b7f1bf269e81d71fc16b8[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Thu Feb 8 14:55:35 2024 -0300
+
+    Update maven.yml
+
+[33mcommit 39822b756dac9227980baeb33082088c90261e65[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Thu Feb 8 14:51:20 2024 -0300
+
+    Update docker-image.yml
+
+[33mcommit 9cfdd9a71fa227e05f88d3e6bdcebe44c49a7be8[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Thu Feb 8 14:50:26 2024 -0300
+
+    Update docker-image.yml
+
+[33mcommit 1ddd0cfed0aa614c8820c1025e0e2da973a17f45[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Thu Feb 8 14:48:28 2024 -0300
+
+    Create, build and push to Docker
+
+[33mcommit b2e11b86ee2beabe2fd39f3597f1a4cb1a5f1724[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Thu Feb 8 14:36:52 2024 -0300
+
+    Update maven.yml
+
+[33mcommit b3c2833ea7b21a301d0689f2f1744c69d6cfa5e6[m
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Thu Feb 8 14:30:53 2024 -0300
+
+    Forget it bro
+
+[33mcommit 8e0161ce7305fc2282eb2910c69082036696c23b[m
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Thu Feb 8 14:28:33 2024 -0300
+
+    forget it
+
+[33mcommit cc1814b12b6abfb7aae6d36f168a6d83895af9a6[m
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Thu Feb 8 14:24:51 2024 -0300
+
+    including java build
+
+[33mcommit 47f92707dcbbb5b123eb3cde70ee0a28f263932a[m
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Thu Feb 8 14:19:42 2024 -0300
+
+    Removing snapshot
+    
+    ;
+
+[33mcommit 20a99e37bc8a077d896509d6378df3f00aed10d3[m
+Merge: 8427b2d 01fb234
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Thu Feb 8 14:14:06 2024 -0300
+
+    Merge branch 'main' of github.com:oscarcheva/hello-world-test into main
+
+[33mcommit 8427b2d52609b77adce0283998db7d1cb985f19c[m
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Thu Feb 8 14:13:39 2024 -0300
+
+    Yet another update
+
+[33mcommit 01fb2340bd6db5d9c3c62f503d2d80d0c587927b[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Thu Feb 8 14:09:05 2024 -0300
+
+    Update maven.yml
+
+[33mcommit 72ec88be358929fefba0036530bd0e24e21d49d5[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Thu Feb 8 14:05:07 2024 -0300
+
+    Update maven.yml
+
+[33mcommit e06a6286709d5ff0561de392f7aad241df449487[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Thu Feb 8 14:03:52 2024 -0300
+
+    Update maven.yml
+
+[33mcommit e0197b1fd9a2d4b6549cfbabce05d5762b36ef1b[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Thu Feb 8 14:00:49 2024 -0300
+
+    Update maven.yml
+
+[33mcommit 8dd8a0b5c65077e56a8b7d0776e4ced03ce2bf80[m
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Thu Feb 8 13:52:09 2024 -0300
+
+    Another update
+
+[33mcommit 518617db5f4212c43706d6fc9bce6c428330f870[m
+Merge: 121978f dc39d22
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Thu Feb 8 13:11:04 2024 -0300
+
+    Merge branch 'main' of github.com:oscarcheva/hello-world-test into main
+
+[33mcommit 121978f09be2aad6cfe3a8b37b01e6a54779d406[m
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Thu Feb 8 13:10:32 2024 -0300
+
+    Updating dockerfile
+
+[33mcommit dc39d22e72c67ca1fb688a536d5f361ecb4efd3d[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Thu Feb 8 13:06:50 2024 -0300
+
+    Update maven.yml
+
+[33mcommit 0801f875722095a59de456e33f6ab69871127f98[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Thu Feb 8 13:01:21 2024 -0300
+
+    Update maven.yml
+
+[33mcommit 5b4dc34000bd0af92a43162bbba2d56e8edf16d1[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Thu Feb 8 12:53:53 2024 -0300
+
+    Update maven.yml
+
+[33mcommit ca2c5c63e397ea91f333b63cfc0530c3f5450f57[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Thu Feb 8 12:46:47 2024 -0300
+
+    Update maven.yml
+
+[33mcommit d6f86c55e72c157256a147dd5916dd6f24642979[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Wed Feb 7 16:17:10 2024 -0300
+
+    Update maven.yml
+
+[33mcommit 7f39395345de6298f439c637d6d0496c22de7e63[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Wed Feb 7 16:13:30 2024 -0300
+
+    Update maven.yml
+
+[33mcommit fe22cefffab5e988be7f520a52aaca2576885036[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Wed Feb 7 16:09:48 2024 -0300
+
+    Update maven.yml
+
+[33mcommit 66076bfdfe64852243afb490f71bbdeac94931f8[m
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Wed Feb 7 16:04:44 2024 -0300
+
+    Docker File added
+
+[33mcommit 42eb8bcd5b29492e11a8a6833ba66e7a89080742[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Wed Feb 7 15:32:47 2024 -0300
+
+    Update maven.yml
+
+[33mcommit 739e1682d045c36d267b1c66cce5ad3e7baab6c0[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Wed Feb 7 15:31:06 2024 -0300
+
+    Update maven.yml
+
+[33mcommit 272a1d8b7092b57ada01ff0983c17e709d43d723[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Wed Feb 7 15:19:21 2024 -0300
+
+    Create maven and Docker.yml
+    
+    Maven Build with Docker push
+
+[33mcommit c3edbb85170102ca1f1058a3b9e99c1f2f5faa74[m
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Tue Jan 30 14:50:21 2024 -0300
+
+    Removing test
+
+[33mcommit b61ad55ac45d989b360806e1022a64ea32f2ad74[m
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Thu Jan 25 15:50:07 2024 -0300
+
+    changed repo
+
+[33mcommit cdc279b19d6475e77005624285c6b32302dbc6bc[m
+Author: Echeverria, Oscar <oscar.echeverria@sabre.com>
+Date:   Thu Jan 25 12:50:22 2024 -0300
+
+    Test app created
+
+[33mcommit c81adf70bda0a1a77447daa46a8d1e1a29a18590[m
+Author: oscarcheva <57965843+oscarcheva@users.noreply.github.com>
+Date:   Thu Jan 25 12:28:32 2024 -0300
+
+    Initial commit
