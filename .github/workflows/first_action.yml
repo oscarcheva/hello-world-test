@@ -41,7 +41,7 @@ jobs:
         run: ls /home/runner/work/hello-world-test
 
       - name: Set new version
-        run: mvn -f /home/runner/work/hello-world-test/hello-world-test/pom.xml versions:set -DnewVersion=1.0.1
+        run: mvn versions:set -DnewVersion=1.0.1
 
       - name: Build JAR with Maven
         run: mvn -B clean package
