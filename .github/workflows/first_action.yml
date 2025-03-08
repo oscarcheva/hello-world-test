@@ -8,4 +8,9 @@
           run: echo "Hello World"
        -  name: Print goodbye
           run: echo "Goodbye World"
+       -  name: MultiLine run
+          run: |
+           echo "Multiline command 1"
+           echo "Multiline command 2"
+
        
