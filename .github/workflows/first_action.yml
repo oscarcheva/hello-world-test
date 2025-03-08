@@ -41,7 +41,8 @@ jobs:
         run: ls /home/runner/work/hello-world-test
 
       - name: Set new version
-        run: mvn versions:set -DnewVersion=1.0.1
+        working-directory: /home/runner/work/hello-world-test/hello-world-test
+        run: mvn versions:set -DnewVersion=1.0.1 -DgenerateBackupPoms=false
 
       - name: Build JAR with Maven
         run: mvn -B clean package
