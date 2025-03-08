@@ -1,39 +1,45 @@
- name: First Workflow
- on: workflow_dispatch
- jobs: 
-   first-job:
-     runs-on: ubuntu-latest
-     steps:
-       -  name: Print greeting
-          run: echo "Hello World"
+name: First Workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello World"
 
-       -  name: Print goodbye
-          run: echo "Goodbye World"
+      - name: Print goodbye
+        run: echo "Goodbye World"
 
-       -  name: MultiLine run
-          run: |
-           echo "Multiline command 1"
-           echo "Multiline command 2"
+      - name: MultiLine run
+        run: |
+          echo "Multiline command 1"
+          echo "Multiline command 2"
 
-       -  name: Set up JDK 11
-          uses: actions/setup-java@v2
-          with:
-             java-version: '11'
-             distribution: 'adopt'
-             java-package: 'jdk'
-             architecture: 'x64'
-             check-latest: false
-             server-id: 'github'
-             server-username: ${{ github.actor }}
-             server-password: ${{ secrets.GITHUB_TOKEN }}
-             overwrite-settings: true
-             job-status: 'success'
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+          distribution: 'adopt'
+          java-package: 'jdk'
+          architecture: 'x64'
+          check-latest: false
+          server-id: 'github'
+          server-username: ${{ github.actor }}
+          server-password: ${{ secrets.GITHUB_TOKEN }}
+          overwrite-settings: true
+          job-status: 'success'
 
-       - name: Set new version
-         run: mvn -f /home/runner/work/hello-world-test/hello-world-test/pom.xml versions:set -DnewVersion=1.0.1
+      - name: Verify POM file exists
+        run: ls /home/runner/work/hello-world-test/hello-world-test
 
-       - name: Build JAR with Maven
-         run: mvn -B clean package
+      - name: Verify POM file exists
+        run: ls /home/runner/work/hello-world-test
+
+      - name: Set new version
+        run: mvn -f /home/runner/work/hello-world-test/hello-world-test/pom.xml versions:set -DnewVersion=1.0.1
+
+      - name: Build JAR with Maven
+        run: mvn -B clean package
 
 
        
