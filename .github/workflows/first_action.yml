@@ -34,15 +34,13 @@ jobs:
           overwrite-settings: true
           job-status: 'success'
 
-      - name: Verify POM file exists
-        run: ls /home/runner/work/hello-world-test/hello-world-test
-
-      - name: Verify POM file exists
-        run: ls /home/runner/work/hello-world-test
+      - name: Ensure Maven Versions Plugin is Installed
+        working-directory: /home/runner/work/hello-world-test/hello-world-test
+        run: mvn org.codehaus.mojo:versions-maven-plugin:2.8.1:update-versions
 
       - name: Set new version
         working-directory: /home/runner/work/hello-world-test/hello-world-test
-        run: mvn versions:set -DnewVersion=1.0.1 -DgenerateBackupPoms=false
+        run: mvn -B versions:set -DnewVersion=1.0.1 -DgenerateBackupPoms=fals
 
       - name: Build JAR with Maven
         run: mvn -B clean package
