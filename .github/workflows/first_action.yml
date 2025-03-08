@@ -34,13 +34,13 @@ jobs:
           overwrite-settings: true
           job-status: 'success'
 
-      - name: Ensure Maven Versions Plugin is Installed
+      - name: Update Maven Dependencies
         working-directory: /home/runner/work/hello-world-test/hello-world-test
-        run: mvn org.codehaus.mojo:versions-maven-plugin:2.8.1:update-versions
+        run: mvn versions:update-properties
 
       - name: Set new version
         working-directory: /home/runner/work/hello-world-test/hello-world-test
-        run: mvn -B versions:set -DnewVersion=1.0.1 -DgenerateBackupPoms=fals
+        run: mvn -B versions:set -DnewVersion=1.0.1 -DgenerateBackupPoms=false
 
       - name: Build JAR with Maven
         run: mvn -B clean package
