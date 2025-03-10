@@ -47,7 +47,7 @@ jobs:
         run: mvn -B versions:set -DnewVersion=1.0.1 -DgenerateBackupPoms=false
 
       - name: Cache Maven packages
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ~/.m2
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
