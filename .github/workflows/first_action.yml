@@ -19,6 +19,7 @@ jobs:
         run: |
           echo "Multiline command 1"
           echo "Multiline command 2"
+          echos "hello"
 
       - name: Checkout code
         uses: actions/checkout@v4
