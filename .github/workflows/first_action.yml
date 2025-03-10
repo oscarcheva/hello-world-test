@@ -1,5 +1,10 @@
 name: First Workflow
-on: workflow_dispatch
+#on: workflow_dispatch
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 jobs:
   first-job:
     runs-on: ubuntu-latest
@@ -16,7 +21,7 @@ jobs:
           echo "Multiline command 2"
 
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -34,13 +39,20 @@ jobs:
           overwrite-settings: true
           job-status: 'success'
 
-      - name: Update Maven Dependencies
-        working-directory: /home/runner/work/hello-world-test/hello-world-test
-        run: mvn versions:update-properties
-
+          #      - name: Update Maven Dependencies
+          #        working-directory: /home/runner/work/hello-world-test/hello-world-test
+          #        run: mvn versions:update-properties
       - name: Set new version
         working-directory: /home/runner/work/hello-world-test/hello-world-test
         run: mvn -B versions:set -DnewVersion=1.0.1 -DgenerateBackupPoms=false
+
+      - name: Cache Maven packages
+        uses: actions/cache@v2
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
 
       - name: Build JAR with Maven
         run: mvn -B clean package
