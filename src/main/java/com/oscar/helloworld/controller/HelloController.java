@@ -1,5 +1,7 @@
 package com.oscar.helloworld.controller;
 
+import com.openai.models.chat.completions.ChatCompletion;
+import com.oscar.helloworld.config.OpenAIConfig;
 import com.oscar.helloworld.service.HelloService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,15 +15,22 @@ import reactor.core.publisher.Mono;
 public class HelloController {
 
     private final HelloService helloService;
+    private final OpenAIConfig config;
 
     @GetMapping("/hello")
-    public String getHello(){
+    public String getHello() {
         return helloService.hello();
     }
 
     @GetMapping("/hello2")
-    public Mono<String> getHello2(){
+    public Mono<String> getHello2() {
         return helloService.hello2();
+    }
+
+    @GetMapping("/chat")
+    public ChatCompletion getChatResponse() {
+        return helloService.chatGPTResponse(config.openAI());
+
     }
 
 }
