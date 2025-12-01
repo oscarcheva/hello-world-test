@@ -1,12 +1,13 @@
 package com.oscar.helloworld.controller;
 
+import com.google.genai.types.GenerateContentResponse;
 import com.openai.models.chat.completions.ChatCompletion;
-import com.oscar.helloworld.config.OpenAIConfig;
+import com.oscar.helloworld.DTO.ChatRequestDTO;
+import com.oscar.helloworld.DTO.ChatResponseDTO;
+import com.oscar.helloworld.config.AIConfig;
 import com.oscar.helloworld.service.HelloService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
 
 @RestController
@@ -15,7 +16,7 @@ import reactor.core.publisher.Mono;
 public class HelloController {
 
     private final HelloService helloService;
-    private final OpenAIConfig config;
+    private final AIConfig config;
 
     @GetMapping("/hello")
     public String getHello() {
@@ -27,9 +28,15 @@ public class HelloController {
         return helloService.hello2();
     }
 
-    @GetMapping("/chat")
-    public ChatCompletion getChatResponse() {
+    @GetMapping("/chatgpt")
+    public ChatCompletion getChatGPTResponse() {
         return helloService.chatGPTResponse(config.openAI());
+
+    }
+
+    @PostMapping("/gemini")
+    public ChatResponseDTO getGeminiResponse(@RequestBody ChatRequestDTO promptBody) {
+        return helloService.geminiResponse(config.GeminiClient(),promptBody);
 
     }
 
