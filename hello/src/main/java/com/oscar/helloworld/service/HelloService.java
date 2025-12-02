@@ -7,8 +7,8 @@ import com.openai.client.OpenAIClient;
 import com.openai.models.ChatModel;
 import com.openai.models.chat.completions.ChatCompletion;
 import com.openai.models.chat.completions.ChatCompletionCreateParams;
-import com.oscar.helloworld.DTO.ChatRequestDTO;
-import com.oscar.helloworld.DTO.ChatResponseDTO;
+import com.oscar.helloworld.DTO.chat.ChatRequestDTO;
+import com.oscar.helloworld.DTO.chat.ChatResponseDTO;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 

@@ -1,4 +1,4 @@
-package com.oscar.helloworld.DTO;
+package com.oscar.helloworld.DTO.chat;
 
 import com.google.genai.types.Candidate;
 import com.google.genai.types.Content;

@@ -1,4 +1,4 @@
-package com.oscar.helloworld.DTO;
+package com.oscar.secondapp.DTO;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -6,10 +6,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Builder
-@NoArgsConstructor
 @AllArgsConstructor
-public class ChatRequestDTO {
+@NoArgsConstructor
+@Builder
+public class MenuRequestDTO {
 
-    private String prompt;
+    private String dayName;
 }

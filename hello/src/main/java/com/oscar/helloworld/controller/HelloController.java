@@ -1,9 +1,8 @@
 package com.oscar.helloworld.controller;
 
-import com.google.genai.types.GenerateContentResponse;
 import com.openai.models.chat.completions.ChatCompletion;
-import com.oscar.helloworld.DTO.ChatRequestDTO;
-import com.oscar.helloworld.DTO.ChatResponseDTO;
+import com.oscar.helloworld.DTO.chat.ChatRequestDTO;
+import com.oscar.helloworld.DTO.chat.ChatResponseDTO;
 import com.oscar.helloworld.config.AIConfig;
 import com.oscar.helloworld.service.HelloService;
 import lombok.RequiredArgsConstructor;
